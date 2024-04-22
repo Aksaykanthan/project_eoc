@@ -1,8 +1,11 @@
-import basic
+import main
+
+
 
 while True:
-	text = input('basic > ')
-	result, error = basic.run('<stdin>', text)
+	text = input('kex > ')
+	if text == "qq": break
+	result, error = main.run('<stdin>', text)
 
 	if error: print(error.as_string())
 	elif result: print(result)
